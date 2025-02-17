@@ -6,7 +6,6 @@
     <title>Currículo de Matheus Augusto</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <h1>Matheus Augusto</h1>
         <p><strong>Cargo desejado:</strong> Desenvolvedor Web</p>
@@ -17,8 +16,6 @@
             
         </ul>
     </header>
-
-    <!-- Formação Acadêmica -->
     <section>
         <h2>Formação Acadêmica</h2>
         <article>
@@ -26,8 +23,6 @@
             <p><strong>Período:</strong> fevereiro 2023 - Dezembro 2025</p>
         </article>
     </section>
-
-    <!-- Habilidades -->
     <section>
         <h2>Habilidades</h2>
         <ul>
@@ -36,8 +31,6 @@
             <li>Banco de Dados (MySQL, PostgreSQL)</li>
         </ul>
     </section>
-
-    <!-- Idiomas -->
     <section>
         <h2>Idiomas</h2>
         <ul>
@@ -46,4 +39,4 @@
         </ul>
     </section>
 </body>
-</html>
+</html
