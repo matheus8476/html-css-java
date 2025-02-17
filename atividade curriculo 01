@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Matheus Augusto</title>
+</head>
+<body>
+    <header>
+        <h1>Matheus Augusto</h1>
+        <p><strong>Cargo desejado:</strong> Desenvolvedor Web</p>
+        <p><strong>Contato:</strong></p>
+        <ul>
+            <li><strong>E-mail:</strong> 22matheusaugusto@gmail.com</li>
+            <li><strong>Telefone:</strong> (31) 98430-3894</li>
+            
+        </ul>
+    </header>
+    <section>
+        <h2>Formação Acadêmica</h2>
+        <article>
+            <h3>Técnico em Informática - Grau tecnico</h3>
+            <p><strong>Período:</strong> fevereiro 2023 - Dezembro 2025</p>
+        </article>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Desenvolvimento Front-End (HTML, CSS, JavaScript)</li>
+            <li>Desenvolvimento Back-End (PHP, Node.js)</li>
+            <li>Banco de Dados (MySQL, PostgreSQL)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Idiomas</h2>
+        <ul>
+            <li><strong>Inglês:</strong> Intermediario</li>
+            <li><strong>Español:</strong> Avançado</li>
+        </ul>
+    </section>
+</body>
+</html
