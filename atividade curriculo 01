@@ -8,6 +8,7 @@
 <body>
     <header>
         <h1>Matheus Augusto</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuaAoqG-BnpAge29NG5WtzcJbxd23GVDZVgg&s" alt="">
         <p><strong>Cargo desejado:</strong> Desenvolvedor Web</p>
         <p><strong>Contato:</strong></p>
         <ul>
@@ -39,4 +40,5 @@
         </ul>
     </section>
 </body>
-</html
+</html>
+
