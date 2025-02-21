@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore o Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explore o Mundo</h1>
+    </header>
+    
+    <main>
+        <section class="destaque">
+            <img src="destaque.jpg" alt="Imagem de destaque">
+            <p>Descubra os destinos mais incríveis para suas próximas aventuras!</p>
+        </section>
+        
+        <section class="galeria">
+            <div class="destino">
+                <img src="destino1.jpg" alt="Destino 1">
+                <h2>Paris, França</h2>
+                <p>A cidade do amor e das luzes, perfeita para uma viagem inesquecível.</p>
+            </div>
+            <div class="destino">
+                <img src="destino2.jpg" alt="Destino 2">
+                <h2>Rio de Janeiro, Brasil</h2>
+                <p>Praias deslumbrantes e uma energia vibrante que encanta a todos.</p>
+            </div>
+            <div class="destino">
+                <img src="destino3.jpg" alt="Destino 3">
+                <h2>Kyoto, Japão</h2>
+                <p>Tradição e modernidade se encontram nesta cidade cheia de templos.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contato: contato@exploreomundo.com | Siga-nos nas redes sociais</p>
+    </footer>
+</body>
+</html>
