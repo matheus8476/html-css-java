@@ -1,0 +1,99 @@
+<!-- arquivo: dias.php -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dia da Semana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            text-align: center;
+            margin: 20px;
+        }
+        form {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+        }
+        input[type="number"] {
+            padding: 8px;
+            margin: 5px;
+            width: 120px;
+        }
+        input[type="submit"] {
+            background: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background: #e64a19;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            min-width: 220px;
+            background: #2196F3;
+            color: white;
+        }
+        .erro {
+            background: #E53935;
+        }
+    </style>
+</head>
+<body>
+    <h2>Verificar Dia da Semana</h2>
+
+    <form method="POST">
+        <input type="number" name="dia" placeholder="Digite um número (1-7)" min="1" max="7" required>
+        <br><br>
+        <input type="submit" value="Verificar">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $numero = $_POST["dia"];
+        $resultado = "";
+        $classe = "resultado";
+
+        switch ($numero) {
+            case 1:
+                $resultado = "Segunda-feira";
+                break;
+            case 2:
+                $resultado = "Terça-feira";
+                break;
+            case 3:
+                $resultado = "Quarta-feira";
+                break;
+            case 4:
+                $resultado = "Quinta-feira";
+                break;
+            case 5:
+                $resultado = "Sexta-feira";
+                break;
+            case 6:
+                $resultado = "Sábado";
+                break;
+            case 7:
+                $resultado = "Domingo";
+                break;
+            default:
+                $resultado = "Número inválido!";
+                $classe .= " erro";
+        }
+
+        echo "<div class='$classe'>$resultado</div>";
+    }
+    ?>
+</body>
+</html>
