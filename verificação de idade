@@ -1,0 +1,98 @@
+<!-- arquivo: idade.php -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Idade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            text-align: center;
+            margin: 20px;
+        }
+        form {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+        }
+        input[type="number"] {
+            padding: 8px;
+            margin: 5px;
+            width: 150px;
+        }
+        input[type="submit"] {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            min-width: 200px;
+        }
+        .crianca {
+            background: #FFDD57;
+            color: #333;
+        }
+        .adolescente {
+            background: #4CAF50;
+            color: white;
+        }
+        .adulto {
+            background: #007BFF;
+            color: white;
+        }
+        .idoso {
+            background: #A52A2A;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Classificação por Idade</h2>
+
+    <form method="POST">
+        <input type="number" name="idade" placeholder="Digite sua idade" min="0" required>
+        <br><br>
+        <input type="submit" value="Verificar">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $idade = $_POST["idade"];
+
+        if ($idade >= 0 && $idade <= 12) {
+            $categoria = "Criança";
+            $classe = "crianca";
+        } elseif ($idade >= 13 && $idade <= 17) {
+            $categoria = "Adolescente";
+            $classe = "adolescente";
+        } elseif ($idade >= 18 && $idade <= 59) {
+            $categoria = "Adulto";
+            $classe = "adulto";
+        } elseif ($idade >= 60) {
+            $categoria = "Idoso";
+            $classe = "idoso";
+        } else {
+            $categoria = "Idade inválida!";
+            $classe = "";
+        }
+
+        echo "<div class='resultado $classe'>Categoria: $categoria</div>";
+    }
+    ?>
+</body>
+</html>
